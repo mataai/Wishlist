@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  api: "api.mateimartin.ca:3000"
 };

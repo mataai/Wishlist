@@ -1,2 +1,14 @@
 <app-nav></app-nav>
-<router-outlet></router-outlet>
+<ng-sidebar-container>
+    <!-- A sidebar -->
+    <ng-sidebar [(opened)]="_opened" position="right">
+        <p>Sidebar contents</p>
+    </ng-sidebar>
+
+    <!-- Page content -->
+    <div ng-sidebar-content>
+
+        <router-outlet></router-outlet>
+        <button (click)="_toggleSidebar()">Toggle sidebar</button>
+    </div>
+</ng-sidebar-container>
