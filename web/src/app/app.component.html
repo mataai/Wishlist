@@ -1,7 +1,7 @@
 <app-nav></app-nav>
 <ng-sidebar-container>
     <!-- A sidebar -->
-    <ng-sidebar [(opened)]="_opened" position="right">
+    <ng-sidebar [(opened)]="opened" position="right">
         <p>Sidebar contents</p>
     </ng-sidebar>
 
@@ -9,6 +9,6 @@
     <div ng-sidebar-content>
 
         <router-outlet></router-outlet>
-        <button (click)="_toggleSidebar()">Toggle sidebar</button>
+        <button (click)="toggleSidebar()">Toggle sidebar</button>
     </div>
 </ng-sidebar-container>
